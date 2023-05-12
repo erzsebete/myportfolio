@@ -5,7 +5,7 @@
 
 Esta é uma alternativa a esta ---v  */
 
-.container.testimonials__container {
+.container.education__container {
   width: 40%;
   padding-bottom: 4rem;
 }
@@ -22,7 +22,7 @@ Esta é uma alternativa a esta ---v  */
   
 }
 
-.testimonial {
+.education {
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem;
@@ -31,7 +31,7 @@ Esta é uma alternativa a esta ---v  */
 }
 
 
-.testimonial h6, h5 {
+.education h6, h5 {
   font-size: 0.6rem;
   color: var(--color-light);
 }
@@ -54,7 +54,7 @@ Esta é uma alternativa a esta ---v  */
 /* ______ MEDIUM DEVICES _______ */
 
 @media screen and (max-width: 1024px) {
-  .container.testimonials__container {
+  .container.education__container {
     width: 60%;
   }
 }
@@ -62,11 +62,15 @@ Esta é uma alternativa a esta ---v  */
 /* ______ SMALL DEVICES _______ */
 
 @media screen and (max-width: 600px) {
-  .container.testimonials__container {
+  .container.education__container {
     width: var(--container-width-sm);
   }
 
   .client__review {
     width: var(--container-width-sm);
+  }
+
+  .education {
+    padding: 3rem;
   }
 }

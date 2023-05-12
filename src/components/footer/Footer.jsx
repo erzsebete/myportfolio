@@ -32,6 +32,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="#education" onClick={() => handleLinkClick("education")}>
+                  Education
+                </a>
+              </li>
+              <li>
                 <a href="#skills" onClick={() => handleLinkClick("skills")}>
                   Skills
                 </a>

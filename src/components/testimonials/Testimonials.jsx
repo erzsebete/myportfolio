@@ -14,12 +14,12 @@ import "swiper/css/pagination";
 
 const Education = () => {
   return (
-    <section id="testimonials">
+    <section id="education">
       <h5>My Journey</h5>
       <h2>Skill Development</h2>
 
       <Swiper
-        className="container testimonials__container"
+        className="container education__container"
         // install Swiper modules
         modules={[Pagination]}
         spaceBetween={40}
@@ -28,7 +28,7 @@ const Education = () => {
       >
         {education.map((item) => {
           return (
-            <SwiperSlide key={item.id} className="testimonial">
+            <SwiperSlide key={item.id} className="education">
               <div className="client__avatar">
                 <img src={item.avatar} alt={item.name + item.id} title={item.place}/>
               </div>
