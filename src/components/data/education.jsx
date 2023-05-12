@@ -11,9 +11,8 @@ const education = [
     name: "Frontend Developer Intership",
     place: "NTT DATA",
     time: "+3 Months | 2023 ",
-    review: `This Frontend Internship was an exciting opportunity to gain 
-    hands-on experience in developing dynamic web applications 
-    with cutting-edge technologies, including React, Angular, JavaScript, TypeScript, and Drupal. `,
+    review: `This Frontend Internship was an exciting opportunity to gain hands-on experience in developing dynamic web applications 
+    with different technologies like React, Angular, JavaScript, TypeScript and Drupal.`,
   },
   {
     id: 1,

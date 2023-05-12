@@ -42,7 +42,11 @@ Esta é uma alternativa a esta ---v  */
   display: block;
   width: 80%;
   margin: 0.8rem auto 0;
-  text-align:justify;
+  text-align: justify;
+  hyphens: auto;
+  word-wrap: break-word; 
+  /* for non-webkit browsers */
+
 }
 
 .swiper-pagination-bullet {
