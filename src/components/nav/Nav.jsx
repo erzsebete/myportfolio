@@ -4,13 +4,8 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { SlUserFemale } from "react-icons/sl";
 import { BsCardChecklist } from "react-icons/bs";
 import { IoSchoolOutline } from "react-icons/io5";
-
 import { MdComputer } from "react-icons/md";
-
-
-import { RiServiceLine } from "react-icons/ri";
 import { React, useState, useContext } from "react";
-import { Link } from "react-router-dom";
 
 import { NavContext } from '../../store/navstate';
 
