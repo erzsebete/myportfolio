@@ -1,16 +1,19 @@
-import React from "react";
+import React, {useState}from "react";
 import "./Portfolio.css";
 
-import data from "../data/database";
+import projects from "../data/projects";
 
 const Portfolio = () => {
+
+  
+
   return (
     <section id="portfolio">
       <h5>My recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, subtitle, description, subdescription,github, demo }) => {
+        {projects.map(({ id, image, title, subtitle, description, subdescription,github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -41,6 +44,7 @@ const Portfolio = () => {
           );
         })}
       </div>
+
     </section>
   );
 };

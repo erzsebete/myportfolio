@@ -1,57 +1,129 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF } from "react-icons/fa";
-import { FiInstagram } from "react-icons/fi";
-import { IoLogoTwitter } from "react-icons/io";
+// import { FaFacebookF } from "react-icons/fa";
+// import { FiInstagram } from "react-icons/fi";
+// import { IoLogoTwitter } from "react-icons/io";
+
+import { NavContext } from "../../store/navstate";
 
 const Footer = () => {
   return (
-    <footer id="footer">
-      <a href="#" className="footer__logo">
-        Super Beta
-      </a>
+    <NavContext.Consumer>
+      {([activeNav, setActiveNav]) => {
+        const handleLinkClick = (nav) => {
+          setActiveNav(nav);
+        };
 
-      <ul className="permalinks">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#About">About</a>
-        </li>
-        <li>
-          <a href="#Experience">Experience</a>
-        </li>
-        <li>
-          <a href="#Services">Services</a>
-        </li>
-        <li>
-          <a href="#Portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#Testimonials">Testimonials</a>
-        </li>
-        <li>
-          <a href="#Contact">Contact</a>
-        </li>
-      </ul>
+        return (
+          <footer id="footer">
+            <a href="#" className="footer__logo">
+              Elisabete Monteiro
+            </a>
 
-      <div className="footer__socials">
-        <a href="https://facebook.com">
-          <FaFacebookF />
-        </a>
-        <a href="https://instagram.com">
-          <FiInstagram />
-        </a>
-        <a href="https://twitter.com">
-          <IoLogoTwitter />
-        </a>
-      </div>
-
-      <div className="footer__copyright">
-        <span className="smaller">&copy; Elisabete. All rights reserved.</span>
-      </div>
-    </footer>
+            <ul className="permalinks">
+              <li>
+                <a href="#" onClick={() => handleLinkClick("#")}>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" onClick={() => handleLinkClick("about")}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#skills" onClick={() => handleLinkClick("skills")}>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  onClick={() => handleLinkClick("portfolio")}
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => handleLinkClick("contact")}>
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <div className="footer__copyright">
+              <span className="smaller">
+                &copy; ElisabeteMonteiro. All rights reserved.
+              </span>
+            </div>
+          </footer>
+        );
+      }}
+    </NavContext.Consumer>
   );
 };
 
 export default Footer;
+
+// const Footer = ({ setActiveNav }) => {
+//   const handleLinkClick = (nav) => {
+//     setActiveNav(nav);
+//   };
+
+//   return (
+//     <footer id="footer">
+//       <a href="#" className="footer__logo">
+//         Elisabete Monteiro
+//       </a>
+
+//       <ul className="permalinks">
+//         <li>
+//           <a href="#" onClick={() => handleLinkClick("/")}>
+//             Home
+//           </a>
+//         </li>
+//         <li>
+//           <a href="#about" onClick={() => handleLinkClick("about")}>
+//             About
+//           </a>
+//         </li>
+//         <li>
+//           <a href="#skills" onClick={() => handleLinkClick("skills")}>
+//             Skills
+//           </a>
+//         </li>
+//         <li>
+//           <a href="#portfolio" onClick={() => handleLinkClick("portfolio")}>
+//             Portfolio
+//           </a>
+//         </li>
+//         <li>
+//           <a href="#contact" onClick={() => handleLinkClick("contact")}>
+//             Contact
+//           </a>
+//         </li>
+//       </ul>
+
+//       <div className="footer__copyright">
+//         <span className="smaller">
+//           &copy; ElisabeteMonteiro. All rights reserved.
+//         </span>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
+
+// {
+//   /* <div className="footer__socials">
+//         <a href="https://facebook.com">
+//           <FaFacebookF />
+//         </a>
+//         <a href="https://instagram.com">
+//           <FiInstagram />
+//         </a>
+//         <a href="https://twitter.com">
+//           <IoLogoTwitter />
+//         </a>
+//       </div> */
+// }

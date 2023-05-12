@@ -4,6 +4,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { TbBrandTelegram } from "react-icons/tb";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { RiLinkedinFill } from "react-icons/ri";
 
 import emailjs from "@emailjs/browser";
 
@@ -30,6 +32,7 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
+
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
@@ -52,16 +55,28 @@ const Contact = () => {
             </a>
           </article> */}
 
-          <article className="contact__option">
+          {/* <article className="contact__option">
             <TbBrandTelegram className="contact__option-icon" />
             <h4>Telegram</h4>
             <h5>@omeuusername</h5>
             <a href="https://t.me/yourusername" target="macaco">
               Send a Message
             </a>
-          </article>
+          </article> */}
 
           <article className="contact__option">
+            <RiLinkedinFill className="contact__option-icon" />
+            <h4>Linkedin</h4>
+            <h5>/elisabetemonteiro</h5>
+            <a
+              href="https://www.linkedin.com/in/elisabetemonteiro/"
+              target="macaco"
+            >
+              Send a Message
+            </a>
+          </article>
+
+          {/* <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+3511234567</h5>
@@ -74,7 +89,7 @@ const Contact = () => {
             >
               Send a Message
             </a>
-          </article>
+          </article> */}
         </div>
         {/* END CONTACT OPTIONS */}
 

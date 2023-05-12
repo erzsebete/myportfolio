@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import CTA from "./CTA";
-import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../../components/animatedLetters/animatedLetters";
@@ -48,9 +47,9 @@ const Header = () => {
           </div> */}
           <Cube />
 
-          <a href="#footer" className="scroll__down">
+          {/* <a href="#footer" className="scroll__down">
             Scroll Down
-          </a>
+          </a> */}
         </div>
       </header>
     </>

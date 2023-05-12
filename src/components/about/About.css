@@ -16,14 +16,20 @@
   );
   display: grid;
   place-items: center;
+  
 }
 
 .about__me-image {
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
-  transition: var(--transition);
+  transition: var(--transition);  
+
+  max-width: 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent, black);
+  mask-image: linear-gradient(to top, transparent, black);
 }
+
 
 .about__me-image:hover {
   transform: rotate(0);

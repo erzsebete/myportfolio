@@ -1,6 +1,6 @@
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
@@ -24,17 +24,16 @@
 
 .portfolio__item h3 {
   color: var(--color-primary);
-  margin: 1.2rem 0 0 0; 
+  margin: 1.2rem 0 0 0;
 }
 .portfolio__item p {
   color: rgba(255, 255, 255, 0.8);
-  margin: 0 0  1rem 0;
-  font-size: 0.9rem;
- 
+  margin: 0 0 1rem 0;
+  font-size: 0.8rem;
+
   /* color: var(--color-primary); */
   /* font-style: italic; */
 }
-
 
 .portfolio__item-cta {
   margin: 1rem 0;
@@ -47,16 +46,16 @@
 
 /* ______ MEDIUM DEVICES _______ */
 
-@media screen and (max-width: 1624px) {
+/* @media screen and (max-width: 1624px) {
   .portfolio__container {
     grid-template-columns: 3fr 3fr;
     gap: 1.2rem;
   }
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
 }

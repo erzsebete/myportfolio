@@ -4,23 +4,23 @@ import IMG2 from "../../assets/UPbnb.png";
 import IMG3 from "../../assets/bookshop.png";
 import IMG4 from "../../assets/tic-tac-toe.png";
 
-const data = [
-    {
-        id: 0,
-        image: IMG0,
-        title: "My Portfolio",
-        subtitle: "This site you're on",
-        description: `React, Javascript, Emailjs, Git, Netlify.`,
-        subdescription: `Team collaboration.`,
-        github: "https://github.com/UploadGrupo3/Frontend",
-        demo: "https://project-upskill2-grupo3.netlify.app/homepage",
-      },
+const projects = [
+  {
+    id: 0,
+    image: IMG0,
+    title: "My Portfolio",
+    subtitle: "2023 | This site you're on",
+    description: `React, Javascript, Emailjs, Git, Netlify.`,
+    subdescription: `Always improving.`,
+    github: "https://github.com/erzsebete/myportfolio",
+    demo: "https://elisabetemonteiro.netlify.app/",
+  },
   {
     id: 1,
     image: IMG1,
     title: "UPload",
-    subtitle: "Sharing Videos, Articles, Playlists",
-    description: `Angular, Drupal (Pantheon), Git, Netlify.`,
+    subtitle: "2023 | Sharing Videos, Articles, Playlists",
+    description: `Angular, Typescript, HTML5, Sass, Drupal, Git, Netlify.`,
     subdescription: `Team collaboration.`,
     github: "https://github.com/UploadGrupo3/Frontend",
     demo: "https://project-upskill2-grupo3.netlify.app/homepage",
@@ -29,8 +29,8 @@ const data = [
     id: 2,
     image: IMG2,
     title: "UPbnb",
-    subtitle: "Template for a Rent a House App",
-    description: `Angular, Typescript,Git, Netlify.`,
+    subtitle: "2022 | Template for a Rent a House App",
+    description: `Angular, Typescript, HTML5, Sass/Scss,Git, Netlify.`,
     subdescription: ` `,
     github: "https://github.com/erzsebete/UPbnb",
     demo: "https://upbnbapp.netlify.app",
@@ -39,7 +39,7 @@ const data = [
     id: 3,
     image: IMG3,
     title: "UPskill",
-    subtitle: "Template for a Bookshop",
+    subtitle: "2022 | Template for a Bookshop",
     description: `Angular, Typescript, Git, Netlify.`,
     subdescription: ` `,
     github: "https://github.com/erzsebete/Bookshop_UPskill",
@@ -49,7 +49,7 @@ const data = [
     id: 4,
     image: IMG4,
     title: "Tic-Tac-Toe",
-    subtitle: "Play with AI or with a friend",
+    subtitle: "2022 | Play with AI or with a friend",
     description: `Javascript, Git, Netlify.`,
     subdescription: ` `,
     github: "https://github.com/erzsebete/jogo-galo",
@@ -75,4 +75,7 @@ const data = [
   // },
 ];
 
-export default data;
+export default projects;
+
+
+

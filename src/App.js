@@ -10,25 +10,46 @@ import Skills from "./components/experience/Experience";
 import Education from "./components/testimonials/Testimonials";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { NavProvider } from "./store/navstate";
 
 function App() {
   return (
-    // <BrowserRouter>
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Education />
-      <Skills />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
-    // </BrowserRouter>
+    <NavProvider>
+    <Header />
+    <Nav />
+    <About />
+    <Education />
+    <Skills />
+    <Portfolio />
+    <Contact />
+    <Footer />
+  </NavProvider>
   );
 }
-
 export default App;
+
+
+
+
+
+// function App() {
+//   return (
+//     // <BrowserRouter>
+//     <>
+//       <Header />
+//       <Nav />
+//       <About />
+//       <Education />
+//       <Skills />
+//       <Portfolio />
+//       <Contact />
+//       <Footer />
+//     </>
+//     // </BrowserRouter>
+//   );
+// }
+
+// export default App;
 
 // function App() {
 //   return (
