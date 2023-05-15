@@ -11,7 +11,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
 const Education = () => {
   return (
     <section id="education">
@@ -30,11 +29,20 @@ const Education = () => {
           return (
             <SwiperSlide key={item.id} className="education">
               <div className="client__avatar">
-                <img src={item.avatar} alt={item.name + item.id} title={item.place}/>
+                <img
+                  src={item.avatar}
+                  alt={item.name + item.id}
+                  title={item.place}
+                />
               </div>
               <h4>{item.name}</h4>
               <h6>{item.time}</h6>
               <small className="client__review">{item.review}</small>
+              {item.file && (
+                <a className="btn" href={item.file} download>
+                  Curriculum Plan
+                </a>
+              )}
             </SwiperSlide>
           );
         })}

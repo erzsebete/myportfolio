@@ -19,6 +19,7 @@ Esta é uma alternativa a esta ---v  */
   border: 0.4rem solid var(--color-primary-variant);  
 }
 
+
 .education {
   background: var(--color-bg-variant);
   text-align: center;
@@ -32,6 +33,11 @@ Esta é uma alternativa a esta ---v  */
   font-size: 0.6rem;
   color: var(--color-light);
 }
+
+
+.education a{
+  margin-top: 2rem;
+ }
 
 .client__review {
   color: var(--color-light);
