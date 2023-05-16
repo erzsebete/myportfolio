@@ -10,13 +10,16 @@ header {
   position: relative;
 }
 
+.header__container h5 {
+  font-size: 1.3rem;
+}
 /* ===========  CTA  ========== */
 
 .cta {
   margin-top: 2.5rem;
   display: flex;
   gap: 1.2rem;
-  justify-content: center;
+  justify-content: center; 
 }
 
 /* =========== HEADER SOCIALS  ========== */
@@ -29,6 +32,7 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
+  font-size: 1.3rem;
 }
 
 .header__socials::after {
