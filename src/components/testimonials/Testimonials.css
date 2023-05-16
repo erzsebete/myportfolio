@@ -26,11 +26,12 @@ Esta é uma alternativa a esta ---v  */
   padding: 2rem;
   border-radius: 2rem;
   user-select: none; 
+  font-size: 1.1rem;
 }
 
 
 .education h6, h5 {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: var(--color-light);
 }
 
@@ -41,13 +42,14 @@ Esta é uma alternativa a esta ---v  */
 
 .client__review {
   color: var(--color-light);
+  font-size: 1rem;
   font-weight: 300;
   display: block;
   width: 80%;
   margin: 0.8rem auto 0;
   text-align: justify;
   hyphens: auto;
-  word-wrap: break-word; 
+  word-wrap: break-word;   
   /* for non-webkit browsers */
 
 }
